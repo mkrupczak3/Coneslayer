@@ -58,7 +58,7 @@ Coneslayer is not designed to detect non-conical traffic objects, such as traffi
 
 ## Acknowledgements
 
-Ethan Lietner performed much of the prototyping and demonstrated a proof of concept based on yolov4-tiny. His experience was vital in switching to a yolov7-tiny based model.
+Ethan Leitner performed much of the prototyping and demonstrated a proof of concept based on yolov4-tiny. His experience was vital in switching to a yolov7-tiny based model.
 
 Yonnas Alemu and Sahan Reddy [developed a tool](https://gitlab.com/KSU_EVT/autonomous-software/get-orange-cones) to obtain a subset of the FSOCO dataset. Brandon Solon labeled over 1000 images, with up to a dozen cones per image, by hand. These and other contributors' data were instrumental in building the core of coneslayer.
 
