@@ -1,0 +1,60 @@
+{
+    "model": {
+        "xml": "coneslayer.xml",
+        "bin": "coneslayer.bin"
+    },
+    "nn_config": {
+        "output_format": "detection",
+        "NN_family": "YOLO",
+        "input_size": "416x416",
+        "NN_specific_metadata": {
+            "classes": 1,
+            "coordinates": 4,
+            "anchors": [
+                1.783203125,
+                2.818359375,
+                3.21484375,
+                4.4453125,
+                5.3828125,
+                7.30859375,
+                8.609375,
+                11.453125,
+                13.3671875,
+                18.828125,
+                20.046875,
+                32.15625,
+                27.546875,
+                50.59375,
+                37.25,
+                80.75,
+                65.75,
+                138.375
+            ],
+            "anchor_masks": {
+                "side52": [
+                    0,
+                    1,
+                    2
+                ],
+                "side26": [
+                    3,
+                    4,
+                    5
+                ],
+                "side13": [
+                    6,
+                    7,
+                    8
+                ]
+            },
+            "iou_threshold": 0.1,
+            "confidence_threshold": 0.54
+        }
+    },
+    "mappings": {
+        "labels": [
+            "cone"
+        ]
+    },
+    "version": 1
+}
