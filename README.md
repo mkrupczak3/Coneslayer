@@ -10,7 +10,7 @@ Coneslayer is a lightweight neural-network object detection model for rapid dete
 
 ## Methodology
 
-The core of coneslayer was trained on a set of over 10,000 hand-labeled images of homogeneous cones. About 2600 of these were generated automatically from GoPro footage GoPro footage then labeled by hand by members of the KSU EVT team:
+The core of coneslayer was trained on a set of over 10,000 hand-labeled images of homogeneous cones. About 2600 of these were generated automatically from GoPro footage then labeled by hand by members of the KSU EVT team:
 
 
 | Person            | Images Labeled |
