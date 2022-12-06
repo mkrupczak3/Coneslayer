@@ -6,7 +6,7 @@ Coneslayer is a product of the Kennesaw State University's Electric Vehicle Team
 
 Coneslayer is a lightweight neural-network object detection model for rapid detection of orange traffic cones in static or dynamic scenes. Its design is based on [yolov7-tiny](https://github.com/WongKinYiu/yolov7/), a state of the art rapid object detection framework. Coneslayer is designed to run at at least 30fps live on edge devices, such as the Intel Movidius Myriad X VPU integrated in the Luxonis [OAK-D Pro](https://shop.luxonis.com/products/oak-d-pro) camera.
 
-![Image of four orange traffic cones of varying height in the foreground. All have a confidence score of 0.90 or above](./assets/86.jpg)
+![Image of four orange traffic cones of varying height in the foreground. All have a confidence score of 0.90 or above](./assets/86.jpeg)
 
 ## Methodology
 
@@ -63,3 +63,5 @@ Ethan Lietner performed much of the prototyping and demonstrated a proof of conc
 Yonnas Alemu and Sahan Reddy [developed a tool](https://gitlab.com/KSU_EVT/autonomous-software/get-orange-cones) to obtain a subset of the FSOCO dataset. Brandon Solon labeled over 1000 images, with up to a dozen cones per image, by hand. These and other contributors' data were instrumental in building the core of coneslayer.
 
 Dr. Lance Crimm advised our efforts and provided access to the Kennesaw State University's [High Performance Computer](https://research.kennesaw.edu/computing/index.php) which was used for numerous training sessions and iterations.
+
+GitHub user [MarkDana](https://github.com/MarkDana) and their yolov4-based [RealtimeConeDetection](https://github.com/MarkDana/RealtimeConeDetection) repo served as inspiration for this project.
