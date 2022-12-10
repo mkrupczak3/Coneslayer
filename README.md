@@ -8,6 +8,8 @@ Coneslayer is a lightweight neural-network object detection model for rapid dete
 
 <img width="565" alt="Image of four orange traffic cones of varying height in the foreground. All have a confidence score of 0.90 or above" src="./assets/86.jpeg">
 
+<img width="640" alt="Animated GIF of Coneslayer object detections from racetrack footage" src="./assets/trackvid_inference_highlight.gif">
+
 ## Methodology
 
 The core of coneslayer was trained on a set of over 10,000 hand-labeled images of homogeneous cones. About 2600 of these were generated automatically from GoPro footage then labeled by hand by members of the KSU EVT team:
