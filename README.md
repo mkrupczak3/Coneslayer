@@ -42,7 +42,11 @@ Place `coneslayer.pt` in your yolov7 directory. Run the command:
 python3 detect.py --weights coneslayer.pt --conf 0.54 --iou 0.10 --img-size 416 --source ~/Path/To/Images
 ```
 
-Alternatively, use one of the converted versions of the model, such as `coneslayer_openvino_2021.4_6shave.blob`, `coneslayer-simplified.onnx`, or `coneslayer.bin` created using [tools.luxonis.com](https://tools.luxonis.com). Usage as such may require an associated metadata file in either XML or JSON format.
+Alternatively, this repo uses the Luxonis Depthai Python SDK to obtain depth values for cones detected using the OAK-D:
+[https://gitlab.com/KSU_EVT/autonomous-software/yolov7-luxonis-detection](https://gitlab.com/KSU_EVT/autonomous-software/yolov7-luxonis-detection)
+
+
+You may also use one of the converted versions of the model, such as `coneslayer_openvino_2021.4_6shave.blob`, `coneslayer-simplified.onnx`, or `coneslayer.bin` created using [tools.luxonis.com](https://tools.luxonis.com). Usage as such may require an associated metadata file in either XML or JSON format.
 
 ## Demo
 
