@@ -6,7 +6,7 @@ Coneslayer is a product of the Kennesaw State University's Electric Vehicle Team
 
 Coneslayer is a lightweight neural-network object detection model for rapid detection of orange traffic cones in static or dynamic scenes. Its design is based on [yolov7-tiny](https://github.com/WongKinYiu/yolov7/), a state of the art rapid object detection framework. Coneslayer is designed to run at at least 30fps live on edge devices, such as the Intel Movidius Myriad X VPU integrated in the Luxonis [OAK-D Pro](https://shop.luxonis.com/products/oak-d-pro) camera.
 
-<img width="565" alt="Image of four orange traffic cones of varying height in the foreground. All have a confidence score of 0.90 or above" src="./assets/86.jpeg">
+<img width="640" alt="Image of four orange traffic cones of varying height in the foreground. All have a confidence score of 0.90 or above" src="./assets/86.jpeg">
 
 <img width="640" alt="Animated GIF of Coneslayer object detections from racetrack footage" src="./assets/trackvid_inference_highlight.gif">
 
