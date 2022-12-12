@@ -1,6 +1,6 @@
 # Coneslayer
 
-Coneslayer is a product of the Kennesaw State University's Electric Vehicle Team ([ksuevt.com](https://ksuevt.com)). This repository is licensed under the GPL-v3.0 license, see LICENSE for details
+Coneslayer is a product of the Kennesaw State University's Electric Vehicle Team ([ksuevt.org](https://ksuevt.org)). This repository is licensed under the GPL-v3.0 license, see LICENSE for details
 
 ## Lightweight Orange Traffic Cone detection for autonomous vehicles
 
