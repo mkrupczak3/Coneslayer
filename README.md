@@ -33,6 +33,10 @@ This resulted in a model that performed well on cones similar to those of the tr
 
 To remedy this issue, a series of transfer learning sessions were performed on a heterogeneous labeled dataset of about 800 items, with 500 images sourced from Google Search (from all over the world), screenshots of dashcam video from driving around Midtown Atlanta, and smartphone pictures of cones. An additional 300 images of complex scenes (from dashcam video) labeled as lacking traffic cones were used as negative training data.
 
+A full writeup describing this process is available in the link below:
+
+[https://matthew.krupczak.org/2022/12/13/coneslayer-a-neural-network/](https://matthew.krupczak.org/2022/12/13/coneslayer-a-neural-network/)
+
 ## Usage
 
 Clone WongKinYiu's [yolov7](https://github.com/WongKinYiu/yolov7/) repository and follow its installation instructions (an alternate install method is to use a python virtualenv instead of a container).
