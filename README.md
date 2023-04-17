@@ -41,7 +41,17 @@ A full writeup describing this process is available in the link below:
 
 Clone WongKinYiu's [yolov7](https://github.com/WongKinYiu/yolov7/) repository and follow its installation instructions (an alternate install method is to use a python virtualenv instead of a container).
 
-Place `coneslayer.pt` in your yolov7 directory. Run the command:
+Copy `coneslayer.pt` into your yolov7 directory. Source the python virtualenv as normal:
+```bash
+source yolov7/bin/activate
+```
+
+Install prerequisites for yolov7 for the virtualenv:
+```bash
+python -m pip install requirements.txt
+```
+
+Finally, run the command:
 ```bash
 python3 detect.py --weights coneslayer.pt --conf 0.54 --iou 0.10 --img-size 416 --source ~/Path/To/Images
 ```
@@ -51,6 +61,17 @@ Alternatively, this repo uses the Luxonis Depthai Python SDK to obtain depth val
 
 
 You may also use one of the converted versions of the model, such as `coneslayer_openvino_2021.4_6shave.blob`, `coneslayer-simplified.onnx`, or `coneslayer.bin` created using [tools.luxonis.com](https://tools.luxonis.com). Usage as such may require an associated metadata file in either XML or JSON format.
+
+## Coneslayer Deluxe
+
+A larger Coneslayer, with an increased input size of 1280x1280 and based on YOLOv7-E6E with ~152 million parameters versus YOLOv7-tiny's 6 million, was trained using 4x V100 32Gb for about 120 computer hours. It is available from this repository only as the pytorch binary and not the onyx or other formats.
+
+To run coneslayer-deluxe, clone this repo and copy `coneslayer-deluxe.pt` to your `yolov7` directory. Perform the same steps as listed previously to establish your virtualenv (if you haven't done so already)
+
+Finally, run the command:
+```bash
+python3 detect.py --weights coneslayer-deluxe.pt --conf 0.54 --iou 0.10 --img-size 1280 --source ~/Path/To/Images
+```
 
 ## Demo
 
