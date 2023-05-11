@@ -53,7 +53,7 @@ python -m pip install requirements.txt
 
 Finally, run the command:
 ```bash
-python3 detect.py --weights coneslayer.pt --conf 0.54 --iou 0.10 --img-size 416 --source ~/Path/To/Images
+python3 detect.py --weights coneslayer.pt --conf 0.54 --iou 0.50 --img-size 416 --source ~/Path/To/Images
 ```
 
 Alternatively, this repo uses the Luxonis Depthai Python SDK to obtain depth values for cones detected using the OAK-D:
@@ -62,15 +62,28 @@ Alternatively, this repo uses the Luxonis Depthai Python SDK to obtain depth val
 
 You may also use one of the converted versions of the model, such as `coneslayer_openvino_2021.4_6shave.blob`, `coneslayer-simplified.onnx`, or `coneslayer.bin` created using [tools.luxonis.com](https://tools.luxonis.com). Usage as such may require an associated metadata file in either XML or JSON format.
 
+## Coneslayer Redux
+
+A moderately larger Coneslayer model, "Coneslayer Redux" is now available in the `coneslayer-redux` folder. It has an increased input size of 640x640 and is based on the YOLOv7 base model with ~32 million parameters, versus the original Coneslayer's 6 million. It was trained using the same methodology as Coneslayer, but the larger model size may allow it to be more accurate despite a reduced speed of inference.
+
+To run coneslayer-redux, clone this repo and copy `coneslayer-redux.pt` to your `yolov7` directory. Perform the same steps as listed previously to establish your virtualenv (if you haven't done so already)
+
+Finally, run the command:
+```bash
+python 3 detect.py --weights coneslayer-redux.pt --conf 0.54 --iou 0.50 --img-size 640 --source ~/Path/To/Images
+```
+
+You may also use one of the converted versions of the model, such as `coneslayer-redux_openvino_2022.1_6shave.blob`, `coneslayer-redux-simplified.onnx`, or `coneslayer-redux.bin` created using [tools.luxonis.com](https://tools.luxonis.com). Usage as such may require an associated metadata file in either XML or JSON format.
+
 ## Coneslayer Deluxe
 
-A larger Coneslayer, with an increased input size of 1280x1280 and based on YOLOv7-E6E with ~152 million parameters versus YOLOv7-tiny's 6 million, was trained using 4x V100 32Gb for about 120 computer hours. It is available from this repository only as the pytorch binary and not the onyx or other formats.
+An even larger Coneslayer, with an increased input size of 1280x1280 and based on YOLOv7-E6E with ~152 million parameters versus YOLOv7-tiny's 6 million, was trained using 4x V100 32Gb for about 120 computer hours. It is available from this repository only as the pytorch binary and not the onyx or other formats.
 
 To run coneslayer-deluxe, clone this repo and copy `coneslayer-deluxe.pt` to your `yolov7` directory. Perform the same steps as listed previously to establish your virtualenv (if you haven't done so already)
 
 Finally, run the command:
 ```bash
-python3 detect.py --weights coneslayer-deluxe.pt --conf 0.54 --iou 0.10 --img-size 1280 --source ~/Path/To/Images
+python3 detect.py --weights coneslayer-deluxe.pt --conf 0.54 --iou 0.50 --img-size 1280 --source ~/Path/To/Images
 ```
 
 ## Demo

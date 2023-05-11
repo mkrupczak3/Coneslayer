@@ -1,1 +1,6 @@
 coneslayer-deluxe.pt filter=lfs diff=lfs merge=lfs -text
+coneslayer-deluxe/coneslayer-deluxe.pt filter=lfs diff=lfs merge=lfs -text
+coneslayer-redux/coneslayer-redux.bin filter=lfs diff=lfs merge=lfs -text
+coneslayer-redux/coneslayer-redux.pt filter=lfs diff=lfs merge=lfs -text
+coneslayer-redux/coneslayer-redux_openvino_2022.1_6shave.blob filter=lfs diff=lfs merge=lfs -text
+coneslayer-redux/coneslayer-redux-simplified.onnx filter=lfs diff=lfs merge=lfs -text
